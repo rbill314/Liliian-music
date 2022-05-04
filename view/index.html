@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>May the 4th be with you</title>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/style.css" />
+</head>
+
+<body>
+    <div class="card">
+        <img src="Download7.png" class="img-bottom" width="640" height="480" alt="  " />
+        <img src="Download5.png " class="img-top" width="640" height="480" alt=" " />
+    </div>
+    <ol>
+        <ol>
+            <p>hold space bar for surprise</p>
+            <audio id="audio" controls style="display: none">
+                <source src="Star%20Wars%20Main%20Theme%20(Full).mp3" type="audio/mpeg" />
+            </audio>
+        </ol>
+    </ol>
+</body>
+<script>
+    document.addEventListener("keydown", function (e) {
+        if (e.keyCode == 32) {
+            document.getElementById("audio").play();
+        }
+    });
+    document.addEventListener("keydown", function (e) {
+        if (e.keyCode == 13) {
+            document.getElementById("audio").pause();
+        }
+    });
+</script>
+
+</html>
